@@ -1,0 +1,2 @@
+# bgSlider
+Simple background slideshow
