@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<title>BgSlider example</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width , initial-scale=1.0">
+		
+		<script src="bgslider.js"></script>
+		
+		<script>
+			//First param is array of all images URI to use in slideshow
+			//Second param is a object of options to use
+			//Third param is a object of CSS property to apply to DIVs used for the slideshow
+			bgslider([
+				'img/bg1.jpg',
+				'img/bg2.jpg',
+				'img/bg3.jpg',
+			], {
+				TransitionDelay : 2000, 		//Duration of the fade transition in milliseconds (default: 2000)
+				SlideDelay 		: 5000, 		//How long each image is displayed in milliseconds (default: 5000)
+				appendTo 		: 'body', 		//CSS selector used to add the two DIVs used for the slideshow (default: body)
+				className		: 'bgslider' 	//Classname added to the two DIVs used for the slideshow (default: bgslider)
+			} , {
+				//Here are the default CSS values applied to the two DIVs used for the slideshow
+				//You can modify them and/or add others
+				width : '100vw',
+				height : '100vh',
+				top : 0,
+				left: 0,
+				position: 'fixed',
+				zIndex: -10000,
+				backgroundSize: 'cover',
+				backgroundPosition: 'center center'
+			});
+		</script>
+
+	</head>
+
+	<body>
+		
+		<!-- body content do not matters -->
+		<div style="max-width: 400px;  padding: 20px; background-color: rgba(0,0,0,0.6); color: #fff; text-align:center; border-radius: 25px; margin:auto;">
+			<h1>BgSlider example</h1>
+			<p>example with all options</p>
+		</div>
+
+	</body>
+
+</html>
