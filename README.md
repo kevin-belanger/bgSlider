@@ -1,6 +1,9 @@
 # bgSlider
 Simple background slideshow
 
+The slider add two DIV tags to the body and use them to fade between specified images.
+Works with most major browsers including ie10.
+
 BgSlider is under MIT licence
 
 Copyright 2019 Kevin Bélanger
