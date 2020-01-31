@@ -68,7 +68,7 @@ function bgslider(imgList, options, css) {
 	
 
 	function start() {
-		//Insert img tags in DOM
+		//Insert the 2 DIVs tags in DOM
 		var elem = document.querySelector(options.appendTo);
 		elem.insertBefore(div1, elem.firstChild);
 		elem.insertBefore(div2, elem.firstChild);
